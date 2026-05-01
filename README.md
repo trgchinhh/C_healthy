@@ -1,7 +1,7 @@
 # Thư viện tính chỉ số cơ thể Python
 
 ### Phiên bản mới nhất trên Pypi: [Version 0.2.6](https://pypi.org/project/C-healthy/0.2.6/)
-### Phiên bản C++: [Xem tại đây](https://github.com/trgchinhh/library-C_healthy-Cpp)
+### Phiên bản C++: [Xem tại đây](https://github.com/trgchinhh/library-C_healthy-cpp)
 
 ### Link bài viết: [Xem bài viết tại đây](https://www.facebook.com/share/p/161whS2WdN/)
 
