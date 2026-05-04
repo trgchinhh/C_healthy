@@ -1,11 +1,9 @@
 # Thư viện tính chỉ số cơ thể Python
 
-### Phiên bản mới nhất trên Pypi: [Version 0.2.6](https://pypi.org/project/C-healthy/0.2.6/)
-### Phiên bản C++: [Xem tại đây](https://github.com/trgchinhh/library-C_healthy-cpp)
-
-### Link bài viết: [Xem bài viết tại đây](https://www.facebook.com/share/p/161whS2WdN/)
-
-### Cách tạo thư viện: [Xem hướng dẫn tại đây](https://github.com/trgchinhh/library-C_healthy/blob/main/Instruct.md)
+- Phiên bản mới nhất trên Pypi: [Version 0.2.6](https://pypi.org/project/C-healthy/0.2.6/)
+- Phiên bản C++: [Xem tại đây](https://github.com/trgchinhh/library-C_healthy-cpp)
+- Link bài viết: [Xem bài viết tại đây](https://www.facebook.com/share/p/161whS2WdN/)
+- Cách tạo thư viện: [Xem hướng dẫn tại đây](https://github.com/trgchinhh/library-C_healthy/blob/main/Instruct.md)
 
 ## Tính năng 
 C_healthy là thư viện Python để tính toán các chỉ số sức khỏe (BMI, BMR, TDEE, và nhiều chỉ số khác) và đồng thời đưa ra lời khuyên với chỉ số cơ thể hiện tại 
