@@ -23,7 +23,7 @@ C_healthy là thư viện hỗ trợ tính toán và phân tích các chỉ số
 ## Liên kết dự án
 **Pypi:** [Linh thư viện chính thức C-healthy v0.2.6](https://pypi.org/project/C-healthy/0.2.6/)<br>
 **C++ (GitHub):** [library-C_healthy-cpp](https://github.com/trgchinhh/library-C_healthy-cpp)<br>
-**Hướng dẫn xây dựng thư viện:** [Instruct.md](https://github.com/trgchinhh/library-C_healthy/blob/main/Instruct.md)<br>
+**Hướng dẫn xây dựng thư viện:** [Instruct.md](https://github.com/trgchinhh/C_healthy/blob/main/INSTRUCT.md)<br>
 **Bài viết trên FB:** [Bài viết chính thức trên Facebook](https://www.facebook.com/share/p/161whS2WdN/)<br>
 
 ---
