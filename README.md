@@ -1,5 +1,5 @@
 ![C_healthy-logo](img/logo.png)
-<p align="center"><a href="https://pypi.org/project/C-healthy/0.2.6/"><img src="https://img.shields.io/pypi/v/C-healthy.svg?color=blue&label=PyPI" alt="PyPI Version"/></a> <a href="https://github.com/trgchinhh/library-C_healthy-cpp"><img src="https://img.shields.io/badge/Language-Python%20%7C%20C%2B%2B-orange.svg" alt="Languages"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"/></a></p>
+<p align="center"><a href="https://pypi.org/project/C-healthy/0.2.6/"><img src="https://img.shields.io/pypi/v/C-healthy.svg?color=blue&label=PyPI" alt="PyPI Version"/></a> <a href="https://github.com/trgchinhh/library-C_healthy-cpp"><img src="https://img.shields.io/badge/Language-Python-orange.svg" alt="Languages"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"/></a></p>
 
 ## C_healthy
 
