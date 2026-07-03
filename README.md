@@ -36,7 +36,7 @@ C_healthy là thư viện hỗ trợ tính toán và phân tích các chỉ số
 | **MMI** | Muscle Mass Index | Chỉ số khối lượng cơ bắp thuần |
 | **BFM** | Body Fat Mass | Tổng khối lượng mỡ tính bằng kilôgam |
 
---
+---
 
 ## Cách cài đặt và nâng cấp
 ```bash
