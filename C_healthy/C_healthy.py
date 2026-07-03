@@ -327,91 +327,126 @@ def NABFM(bfm: float):
     return f"Khối lượng mỡ cơ thể: {bfm} kg"
 
 
-def INSTRUCT():
-    instruct = """Hướng dẫn sử dụng các hàm tính toán chỉ số cơ thể và lời khuyên dinh dưỡng:
+import os
 
-1. **BMI**: Nhập theo cú pháp BMI([cân nặng] [chiều cao]).
-   Ví dụ: BMI(60, 1.75)
-   Lời khuyên: NABMI(BMI)
+def INSTRUCT(ten_ham="all", ghi_file=False):
+    huong_dan = {
+        "BMI": """1. BMI
+Cú pháp: BMI(cân_nặng, chiều_cao)
+Ví dụ: BMI(60, 1.75)
+Lời khuyên: NABMI(BMI)
+""",
 
-2. **BMR**: Nhập theo cú pháp BMR([giới tính] [cân nặng], [chiều cao], [tuổi]).
-   Ví dụ: BMR('nam', 70, 1.75, 25)
-   Lời khuyên: NABMR(giới tính, BMR)
+        "BMR": """2. BMR
+Cú pháp: BMR(giới_tính, cân_nặng, chiều_cao, tuổi)
+Ví dụ: BMR('nam', 70, 1.75, 25)
+Lời khuyên: NABMR(giới_tính, BMR)
+""",
 
-3. **TDEE**: Nhập theo cú pháp TDEE([giới tính] [cân nặng], [chiều cao], [tuổi], [chỉ số vận động]).
-   Ví dụ: TDEE('nam', 70, 1.75, 25, 3)
-   Lời khuyên: NATDEE(giới tính, TDEE)
+        "TDEE": """3. TDEE
+Cú pháp: TDEE(giới_tính, cân_nặng, chiều_cao, tuổi, mức_vận_động)
+Ví dụ: TDEE('nam', 70, 1.75, 25, 3)
+Lời khuyên: NATDEE(giới_tính, TDEE)
+""",
 
-4. **WHR**: Nhập theo cú pháp WHR([giới tính] [vòng eo] [vòng hông]).
-   Ví dụ: WHR('nữ', 70, 90)
-   Lời khuyên: NAWHR(WHR)
+        "WHR": """4. WHR
+Cú pháp: WHR(giới_tính, vòng_eo, vòng_hông)
+Ví dụ: WHR('nữ', 70, 90)
+Lời khuyên: NAWHR(WHR)
+""",
 
-5. **LBM**: Nhập theo cú pháp LBM([giới tính] [cân nặng] [chiều cao]).
-   Ví dụ: LBM('nam', 70, 1.75)
-   Lời khuyên: NALBM(LBM)
+        "LBM": """5. LBM
+Cú pháp: LBM(giới_tính, cân_nặng, chiều_cao)
+Ví dụ: LBM('nam', 70, 1.75)
+Lời khuyên: NALBM(LBM)
+""",
 
-6. **FFMI**: Nhập theo cú pháp FFMI([giới tính] [cân nặng] [chiều cao]).
-   Ví dụ: FFMI('nam', 70, 1.75)
-   Lời khuyên: NAFFMI(FFMI)
+        "FFMI": """6. FFMI
+Cú pháp: FFMI(giới_tính, cân_nặng, chiều_cao)
+Ví dụ: FFMI('nam', 70, 1.75)
+Lời khuyên: NAFFMI(FFMI)
+""",
 
-7. **RFM**: Nhập theo cú pháp RFM([vòng eo] [chiều cao]).
-   Ví dụ: RFM(70, 1.75)
-   Lời khuyên: NARFM(RFM)
+        "RFM": """7. RFM
+Cú pháp: RFM(vòng_eo, chiều_cao)
+Ví dụ: RFM(70, 1.75)
+Lời khuyên: NARFM(RFM)
+""",
 
-8. **BFP**: Nhập theo cú pháp BFP([giới tính] [cân nặng] [chiều cao] [tuổi]).
-   Ví dụ: BFP('nam', 70, 1.75, 25)
-   Lời khuyên: NABFP(BFP)
+        "BFP": """8. BFP
+Cú pháp: BFP(giới_tính, cân_nặng, chiều_cao, tuổi)
+Ví dụ: BFP('nam', 70, 1.75, 25)
+Lời khuyên: NABFP(BFP)
+""",
 
-9. **BBW**: Nhập theo cú pháp BBW([cân nặng]).
-   Ví dụ: BBW(70)
-   Lời khuyên: NABBW(BBW)
+        "BBW": """9. BBW
+Cú pháp: BBW(cân_nặng)
+Ví dụ: BBW(70)
+Lời khuyên: NABBW(BBW)
+""",
 
-10. **IBW**: Nhập theo cú pháp IBW([giới tính] [chiều cao]).
-    Ví dụ: IBW('nam', 1.75)
-    Lời khuyên: NAIBW(IBW)
+        "IBW": """10. IBW
+Cú pháp: IBW(giới_tính, chiều_cao)
+Ví dụ: IBW('nam', 1.75)
+Lời khuyên: NAIBW(IBW)
+""",
 
-11. **MA**: Nhập theo cú pháp MA([giới tính] [cân nặng] [chiều cao] [tuổi]).
-    Ví dụ: MA('nam', 70, 1.75, 25)
-    Lời khuyên: NAMA(MA)
+        "MA": """11. MA
+Cú pháp: MA(giới_tính, cân_nặng, chiều_cao, tuổi)
+Ví dụ: MA('nam', 70, 1.75, 25)
+Lời khuyên: NAMA(MA)
+""",
 
-12. **VFR**: Nhập theo cú pháp VFR([vòng eo] [vòng hông]).
-    Ví dụ: VFR(70, 90)
-    Lời khuyên: NAVFR(VFR)
+        "VFR": """12. VFR
+Cú pháp: VFR(vòng_eo, vòng_hông)
+Ví dụ: VFR(70, 90)
+Lời khuyên: NAVFR(VFR)
+""",
 
-13. **BSA**: Nhập theo cú pháp BSA([chiều cao] [cân nặng]).
-    Ví dụ: BSA(1.75, 70)
-    Lời khuyên: NABSA(BSA)
+        "BSA": """13. BSA
+Cú pháp: BSA(chiều_cao, cân_nặng)
+Ví dụ: BSA(1.75, 70)
+Lời khuyên: NABSA(BSA)
+""",
 
-14. **VO2MAX**: Nhập theo cú pháp VO2MAX([nhịp tim tối đa] [nhịp tim nghỉ]).
-    Ví dụ: VO2MAX(200, 70)
-    Lời khuyên: NAVO2MAX(VO2MAX)
+        "VO2MAX": """14. VO2MAX
+Cú pháp: VO2MAX(nhịp_tim_tối_đa, nhịp_tim_nghỉ)
+Ví dụ: VO2MAX(200, 70)
+Lời khuyên: NAVO2MAX(VO2MAX)
+""",
 
-15. **HSI**: Nhập theo cú pháp HSI([giới tính] [cân nặng] [chiều cao] [tuổi] [cholesterol] [huyết áp]).
-    Ví dụ: HSI('nam', 70, 1.75, 25, 200, 120)
-    Lời khuyên: NAHSI(HSI)
+        "HSI": """15. HSI
+Cú pháp: HSI(giới_tính, cân_nặng, chiều_cao, tuổi, cholesterol, huyết_áp)
+Ví dụ: HSI('nam', 70, 1.75, 25, 200, 120)
+Lời khuyên: NAHSI(HSI)
+""",
 
-16. **MMI**: Nhập theo cú pháp MMI([khối lượng cơ bắp] [cân nặng]).
-    Ví dụ: MMI(30, 70)
-    Lời khuyên: NAMMI(MMI)
+        "MMI": """16. MMI
+Cú pháp: MMI(khối_lượng_cơ_bắp, cân_nặng)
+Ví dụ: MMI(30, 70)
+Lời khuyên: NAMMI(MMI)
+""",
 
-17. **BFM**: Nhập theo cú pháp BFM([giới tính] [cân nặng] [chiều cao] [tuổi]).
-    Ví dụ: BFM('nam', 70, 1.75, 25)
-    Lời khuyên: NABFM(BFM)
+        "BFM": """17. BFM
+Cú pháp: BFM(giới_tính, cân_nặng, chiều_cao, tuổi)
+Ví dụ: BFM('nam', 70, 1.75, 25)
+Lời khuyên: NABFM(BFM)
 """
+    }
 
-    file_name = "huong_dan_su_dung.txt"
-    try:
-        if os.path.exists(file_name):
-            with open(file_name, "r", encoding="utf-8") as f:
-                content = f.read()
-                if content == instruct:
-                    return "Đã có file hướng dẫn"
+    if ten_ham.lower() == "all":
+        noi_dung = "HƯỚNG DẪN SỬ DỤNG C_HEALTHY\n\n" + "\n".join(huong_dan.values())
+    else:
+        key = ten_ham.upper()
+        if key not in huong_dan:
+            return f"Không tìm thấy hướng dẫn cho hàm '{ten_ham}'."
+        noi_dung = huong_dan[key]
+    if ghi_file:
+        file_name = "huong_dan_su_dung.txt"
         with open(file_name, "w", encoding="utf-8") as f:
-            f.write(instruct)
-        full_path = os.path.abspath(file_name)
-        return f"Đã tạo file hướng dẫn tại đường dẫn: {full_path}"
-    except Exception as e:
-        return f"Không thể tạo file hướng dẫn: {e}"
+            f.write(noi_dung)
+        return f"Đã tạo file hướng dẫn tại: {os.path.abspath(file_name)}"
+    return noi_dung
 
 # ---------------------------------------------------- 
 # Copyright by NTC++ 11/07/2025 
