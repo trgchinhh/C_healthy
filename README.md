@@ -12,6 +12,9 @@
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"/>
   </a>
+  <a href="https://github.com/trgchinhh">
+    <img src="https://img.shields.io/badge/Author-Tr%C6%B0%E1%BB%9Dng%20Chinh-blueviolet" alt="Author"/>
+  </a>
 </p>
 
 ## C_healthy
