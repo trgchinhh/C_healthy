@@ -139,8 +139,8 @@ print(INSTRUCT()) # hàm hướng dẫn
 ---
 
 ## Tác giả
-**Nguyễn Trường Chinh (NTC++)**
-GitHub: [https://github.com/trgchinhh](https://github.com/trgchinhh)
+**Nguyễn Trường Chinh (NTC++)**<br>
+**GitHub:** [https://github.com/trgchinhh](https://github.com/trgchinhh)
 
 ---
 
