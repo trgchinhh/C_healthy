@@ -17,7 +17,7 @@
   </a>
 </p>
 
-## C_healthy
+## C-healthy
 
 C_healthy là thư viện hỗ trợ tính toán và phân tích các chỉ số sức khỏe như BMI, BMR, TDEE cùng nhiều chỉ số nhân trắc học khác. Bên cạnh việc thực hiện các phép tính, thư viện còn tích hợp hệ thống NA (Nutrition Advice) để phân tích kết quả và đưa ra các khuyến nghị về sức khỏe và dinh dưỡng dựa trên tình trạng hiện tại của người dùng. Thư viện hiện hỗ trợ cả Python và C++.
 
