@@ -128,13 +128,13 @@ from C_healthy import INSTRUCT
 print(INSTRUCT())
 
 # in ra hdsd 1 hàm và không ghi ra file
-print(INSTRUCT("bmi", ghi_file=False))
+print(INSTRUCT("bmi", write_file = False))
 
 # in ra hdsd 1 hàm và ghi ra file
-print(INSTRUCT("bmi", ghi_file=True))
+print(INSTRUCT("bmi", write_file = True))
 
 # ghi hết nội dung vào file
-print(INSTRUCT(ghi_file=True))
+print(INSTRUCT(write_file = True))
 ```
 
 Chi tiết đầy đủ cách dùng 
