@@ -1,69 +1,281 @@
-Hướng dẫn sử dụng các hàm tính toán chỉ số cơ thể và lời khuyên dinh dưỡng:
+C_HEALTHY USER DOCUMENTATION GUIDE
 
-1. **BMI**: Nhập theo cú pháp BMI([cân nặng] [chiều cao]).
-   Ví dụ: BMI(60, 1.75)
-   Lời khuyên: NABMI(BMI)
+1. BMI
+Syntax: BMI(weight, height)
+Example: BMI(60, 1.75)
+Advice: NABMI(BMI)
 
-2. **BMR**: Nhập theo cú pháp BMR([giới tính] [cân nặng], [chiều cao], [tuổi]).
-   Ví dụ: BMR('nam', 70, 1.75, 25)
-   Lời khuyên: NABMR(giới tính, BMR)
+2. BMR
+Syntax: BMR(gender, weight, height, age)
+Example: BMR('male', 70, 1.75, 25)
+Advice: NABMR(gender, BMR)
 
-3. **TDEE**: Nhập theo cú pháp TDEE([giới tính] [cân nặng], [chiều cao], [tuổi], [chỉ số vận động]).
-   Ví dụ: TDEE('nam', 70, 1.75, 25, 3)
-   Lời khuyên: NATDEE(giới tính, TDEE)
+3. TDEE
+Syntax: TDEE(gender, weight, height, age, activity_index)
+Example: TDEE('male', 70, 1.75, 25, 3)
+Advice: NATDEE(gender, TDEE)
 
-4. **WHR**: Nhập theo cú pháp WHR([giới tính] [vòng eo] [vòng hông]).
-   Ví dụ: WHR('nữ', 70, 90)
-   Lời khuyên: NAWHR(WHR)
+4. WHR
+Syntax: WHR(gender, waist_circ, hip_circ)
+Example: WHR('female', 70, 90)
+Advice: NAWHR(WHR)
 
-5. **LBM**: Nhập theo cú pháp LBM([giới tính] [cân nặng] [chiều cao]).
-   Ví dụ: LBM('nam', 70, 1.75)
-   Lời khuyên: NALBM(LBM)
+5. LBM
+Syntax: LBM(gender, weight, height)
+Example: LBM('male', 70, 1.75)
+Advice: NALBM(LBM)
 
-6. **FFMI**: Nhập theo cú pháp FFMI([giới tính] [cân nặng] [chiều cao]).
-   Ví dụ: FFMI('nam', 70, 1.75)
-   Lời khuyên: NAFFMI(FFMI)
+6. FFMI
+Syntax: FFMI(gender, weight, height)
+Example: FFMI('male', 70, 1.75)
+Advice: NAFFMI(FFMI)
 
-7. **RFM**: Nhập theo cú pháp RFM([vòng eo] [chiều cao]).
-   Ví dụ: RFM(70, 1.75)
-   Lời khuyên: NARFM(RFM)
+7. RFM
+Syntax: RFM(waist_circ, height)
+Example: RFM(70, 1.75)
+Advice: NARFM(RFM)
 
-8. **BFP**: Nhập theo cú pháp BFP([giới tính] [cân nặng] [chiều cao] [tuổi]).
-   Ví dụ: BFP('nam', 70, 1.75, 25)
-   Lời khuyên: NABFP(BFP)
+8. BFP
+Syntax: BFP(gender, weight, height, age)
+Example: BFP('male', 70, 1.75, 25)
+Advice: NABFP(BFP)
 
-9. **BBW**: Nhập theo cú pháp BBW([cân nặng]).
-   Ví dụ: BBW(70)
-   Lời khuyên: NABBW(BBW)
+9. BBW
+Syntax: BBW(weight)
+Example: BBW(70)
+Advice: NABBW(BBW)
 
-10. **IBW**: Nhập theo cú pháp IBW([giới tính] [chiều cao]).
-    Ví dụ: IBW('nam', 1.75)
-    Lời khuyên: NAIBW(IBW)
+10. IBW
+Syntax: IBW(gender, height)
+Example: IBW('male', 1.75)
+Advice: NAIBW(IBW)
 
-11. **MA**: Nhập theo cú pháp MA([giới tính] [cân nặng] [chiều cao] [tuổi]).
-    Ví dụ: MA('nam', 70, 1.75, 25)
-    Lời khuyên: NAMA(MA)
+11. MA
+Syntax: MA(gender, weight, height, age)
+Example: MA('male', 70, 1.75, 25)
+Advice: NAMA(MA)
 
-12. **VFR**: Nhập theo cú pháp VFR([vòng eo] [vòng hông]).
-    Ví dụ: VFR(70, 90)
-    Lời khuyên: NAVFR(VFR)
+12. VFR
+Syntax: VFR(waist_circ, hip_circ)
+Example: VFR(70, 90)
+Advice: NAVFR(VFR)
 
-13. **BSA**: Nhập theo cú pháp BSA([chiều cao] [cân nặng]).
-    Ví dụ: BSA(1.75, 70)
-    Lời khuyên: NABSA(BSA)
+13. BSA
+Syntax: BSA(height, weight)
+Example: BSA(1.75, 70)
+Advice: NABSA(BSA)
 
-14. **VO2MAX**: Nhập theo cú pháp VO2MAX([nhịp tim tối đa] [nhịp tim nghỉ]).
-    Ví dụ: VO2MAX(200, 70)
-    Lời khuyên: NAVO2MAX(VO2MAX)
+14. VO2MAX
+Syntax: VO2MAX(max_heart_rate, resting_heart_rate)
+Example: VO2MAX(200, 70)
+Advice: NAVO2MAX(VO2MAX)
 
-15. **HSI**: Nhập theo cú pháp HSI([giới tính] [cân nặng] [chiều cao] [tuổi] [cholesterol] [huyết áp]).
-    Ví dụ: HSI('nam', 70, 1.75, 25, 200, 120)
-    Lời khuyên: NAHSI(HSI)
+15. HSI
+Syntax: HSI(gender, weight, height, age, cholesterol, blood_pressure)
+Example: HSI('male', 70, 1.75, 25, 200, 120)
+Advice: NAHSI(HSI)
 
-16. **MMI**: Nhập theo cú pháp MMI([khối lượng cơ bắp] [cân nặng]).
-    Ví dụ: MMI(30, 70)
-    Lời khuyên: NAMMI(MMI)
+16. MMI
+Syntax: MMI(gender, weight, height)
+Example: MMI('male', 70, 1.75)
+Advice: NAMMI(MMI)
 
-17. **BFM**: Nhập theo cú pháp BFM([giới tính] [cân nặng] [chiều cao] [tuổi]).
-    Ví dụ: BFM('nam', 70, 1.75, 25)
-    Lời khuyên: NABFM(BFM)
+17. BFM
+Syntax: BFM(gender, weight, height, age)
+Example: BFM('male', 70, 1.75, 25)
+Advice: NABFM(BFM)
+
+18. ABSI
+Syntax: ABSI(waist_circ, weight, height)
+Example: ABSI(80, 70, 1.75)
+Advice: NAABSI(ABSI)
+
+19. AVI
+Syntax: AVI(waist_circ, hip_circ)
+Example: AVI(80, 95)
+Advice: NAAVI(AVI)
+
+20. BAI
+Syntax: BAI(hip_circ, height)
+Example: BAI(95, 1.75)
+Advice: NABAI(BAI)
+
+21. CI
+Syntax: CI(weight, height, waist_circ)
+Example: CI(70, 1.75, 80)
+Advice: NACI(CI)
+
+22. WHtR
+Syntax: WHtR(waist_circ, height)
+Example: WHtR(80, 1.75)
+Advice: NAWHtR(WHtR)
+
+23. PonderalIndex / CorpulenceIndex
+Syntax: PonderalIndex(weight, height)
+Example: PonderalIndex(70, 1.75)
+Advice: NAPonderalIndex(PonderalIndex)
+
+24. FMI
+Syntax: FMI(gender, weight, height, age)
+Example: FMI('male', 70, 1.75, 25)
+Advice: NAFMI(FMI)
+
+25. FFM
+Syntax: FFM(gender, weight, height)
+Example: FFM('male', 70, 1.75)
+Advice: NAFFM(FFM)
+
+26. FMR
+Syntax: FMR(gender, weight, height, age)
+Example: FMR('male', 70, 1.75, 25)
+Advice: NAFMR(FMR)
+
+27. TBW
+Syntax: TBW(gender, weight, height, age)
+Example: TBW('male', 70, 1.75, 25)
+Advice: NATBW(TBW)
+
+28. ECW
+Syntax: ECW(gender, weight, height, age)
+Example: ECW('male', 70, 1.75, 25)
+Advice: NAECW(ECW)
+
+29. ICW
+Syntax: ICW(gender, weight, height, age)
+Example: ICW('male', 70, 1.75, 25)
+Advice: NAICW(ICW)
+
+30. BCM
+Syntax: BCM(gender, weight, height, age)
+Example: BCM('male', 70, 1.75, 25)
+Advice: NABCM(BCM)
+
+31. SMI
+Syntax: SMI(gender, weight, height)
+Example: SMI('male', 70, 1.75)
+Advice: NASMI(SMI)
+
+32. ASMI
+Syntax: ASMI(gender, weight, height)
+Example: ASMI('male', 70, 1.75)
+Advice: NAASMI(ASMI)
+
+33. MAMC
+Syntax: MAMC(muac, TSF)
+Example: MAMC(28, 12)
+Advice: NAMAMC(MAMC)
+
+34. MUAC_Assessment
+Syntax: MUAC_Assessment(gender, muac)
+Example: MUAC_Assessment('male', 25)
+Advice: NAMUAC(MUAC_Assessment)
+
+35. BEE
+Syntax: BEE(gender, weight, height, age)
+Example: BEE('male', 70, 1.75, 25)
+Advice: NABEE(BEE)
+
+36. REE
+Syntax: REE(gender, weight, height, age)
+Example: REE('male', 70, 1.75, 25)
+Advice: NAREE(REE)
+
+37. PAL
+Syntax: PAL(gender, weight, height, age, activity_index_R)
+Example: PAL('male', 70, 1.75, 25, 3)
+Advice: NAPAL(PAL)
+
+38. MET
+Syntax: MET(vo2_rate)
+Example: MET(42.5)
+Advice: NAMET(MET)
+
+39. MaxHeartRate
+Syntax: MaxHeartRate(age)
+Example: MaxHeartRate(25)
+Advice: NAMaxHeartRate(MaxHeartRate)
+
+40. HeartRateReserve
+Syntax: HeartRateReserve(resting_heart_rate, age)
+Example: HeartRateReserve(65, 25)
+Advice: NAHeartRateReserve(HeartRateReserve)
+
+41. TargetHeartRate
+Syntax: TargetHeartRate(resting_heart_rate, age, intensity)
+Example: TargetHeartRate(65, 25, 0.7)
+Advice: NATargetHeartRate(TargetHeartRate)
+
+42. CalorieDeficit
+Syntax: CalorieDeficit(tdee, deficit_amount)
+Example: CalorieDeficit(2500, 500)
+Advice: NACalorieDeficit(CalorieDeficit)
+
+43. CalorieSurplus
+Syntax: CalorieSurplus(tdee, surplus_amount)
+Example: CalorieSurplus(2500, 300)
+Advice: NACalorieSurplus(CalorieSurplus)
+
+44. ProteinNeed
+Syntax: ProteinNeed(weight, activity_level)
+Example: ProteinNeed(70, 'medium')
+Advice: NAProteinNeed(ProteinNeed)
+
+45. FatNeed
+Syntax: FatNeed(tdee, calorie_percentage)
+Example: FatNeed(2500, 0.25)
+Advice: NAFatNeed(FatNeed)
+
+46. CarbNeed
+Syntax: CarbNeed(tdee, p_protein_g, p_fat_g)
+Example: CarbNeed(2500, 140, 70)
+Advice: NACarbNeed(CarbNeed)
+
+47. WaterNeed
+Syntax: WaterNeed(weight, workout_minutes)
+Example: WaterNeed(70, 45)
+Advice: NAWaterNeed(WaterNeed)
+
+48. IdealWater
+Syntax: IdealWater(weight)
+Example: IdealWater(70)
+Advice: NAIdealWater(IdealWater)
+
+49. LeanBodyPercentage
+Syntax: LeanBodyPercentage(gender, weight, height)
+Example: LeanBodyPercentage('male', 70, 1.75)
+Advice: NALeanBodyPercentage(LeanBodyPercentage)
+
+50. FatPercentage
+Syntax: FatPercentage(gender, weight, height, age)
+Example: FatPercentage('male', 70, 1.75, 25)
+Advice: NAFatPercentage(FatPercentage)
+
+51. MusclePercentage
+Syntax: MusclePercentage(gender, weight, height)
+Example: MusclePercentage('male', 70, 1.75)
+Advice: NAMusclePercentage(MusclePercentage)
+
+52. BoneMassEstimate
+Syntax: BoneMassEstimate(gender, weight, height)
+Example: BoneMassEstimate('male', 70, 1.75)
+Advice: NABoneMassEstimate(BoneMassEstimate)
+
+53. BMIPrime
+Syntax: BMIPrime(weight, height)
+Example: BMIPrime(70, 1.75)
+Advice: NABMIPrime(BMIPrime)
+
+54. BodyRoundnessIndex / ABodyRoundness
+Syntax: BodyRoundnessIndex(waist_circ, height)
+Example: BodyRoundnessIndex(80, 1.75)
+Advice: NABodyRoundnessIndex(BodyRoundnessIndex)
+
+55. VisceralAdiposityIndex
+Syntax: VisceralAdiposityIndex(gender, weight, height, waist_circ, tg, hdl)
+Example: VisceralAdiposityIndex('male', 70, 1.75, 80, 1.1, 1.2)
+Advice: NAVisceralAdiposityIndex(VisceralAdiposityIndex)
+
+56. LipidAccumulationProduct
+Syntax: LipidAccumulationProduct(gender, waist_circ, tg)
+Example: LipidAccumulationProduct('male', 80, 1.1)
+Advice: NALipidAccumulationProduct(LipidAccumulationProduct)
