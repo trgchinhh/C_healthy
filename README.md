@@ -282,7 +282,7 @@ print(INSTRUCT())
     media="(prefers-color-scheme: light)"
     srcset="https://api.star-history.com/svg?repos=trgchinhh/C_healthy&type=Date" />
   <img
-    alt="C_healthy Star History Chart"
+    alt="C_healthy Star"
     src="https://api.star-history.com/svg?repos=trgchinhh/C_healthy&type=Date" />
 </picture>
 
