@@ -274,6 +274,20 @@ print(INSTRUCT())
 ```
 ---
 
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://api.star-history.com/svg?repos=trgchinhh/C_healthy&type=Date&theme=dark" />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://api.star-history.com/svg?repos=trgchinhh/C_healthy&type=Date" />
+  <img
+    alt="C_healthy Star History Chart"
+    src="https://api.star-history.com/svg?repos=trgchinhh/C_healthy&type=Date" />
+</picture>
+
+---
+
 ## Tác giả
 **Nguyễn Trường Chinh (NTC++)**<br>
 **GitHub:** [https://github.com/trgchinhh](https://github.com/trgchinhh)
