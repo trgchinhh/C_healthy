@@ -31,6 +31,17 @@ C_healthy là thư viện hỗ trợ tính toán và phân tích các chỉ số
 
 ---
 
+## Số sao
+<a href="https://www.star-history.com/?repos=trgchinhh%2FC_healthy&type=date&legend=bottom-right">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=trgchinhh/C_healthy&type=date&theme=dark&legend=bottom-right&sealed_token=jfn3Ybok43PjkJIpsTi0s-wFWkB2SB2jkaGlyJc83mVE0Vm_RjiFasJpBsQPp7o5vPZj4H6sRFVaqzlqPBNe_0KOAdzc6ObfzJqDjeEsiLNzhq1jzAKcruzCqPCjdlYkjUM8yKCgL88dbwK3ABlKh5274o1TfmZunU02DU17-IcycrP-JdcgRlIbrUOF" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=trgchinhh/C_healthy&type=date&legend=bottom-right&sealed_token=jfn3Ybok43PjkJIpsTi0s-wFWkB2SB2jkaGlyJc83mVE0Vm_RjiFasJpBsQPp7o5vPZj4H6sRFVaqzlqPBNe_0KOAdzc6ObfzJqDjeEsiLNzhq1jzAKcruzCqPCjdlYkjUM8yKCgL88dbwK3ABlKh5274o1TfmZunU02DU17-IcycrP-JdcgRlIbrUOF" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=trgchinhh/C_healthy&type=date&legend=bottom-right&sealed_token=jfn3Ybok43PjkJIpsTi0s-wFWkB2SB2jkaGlyJc83mVE0Vm_RjiFasJpBsQPp7o5vPZj4H6sRFVaqzlqPBNe_0KOAdzc6ObfzJqDjeEsiLNzhq1jzAKcruzCqPCjdlYkjUM8yKCgL88dbwK3ABlKh5274o1TfmZunU02DU17-IcycrP-JdcgRlIbrUOF" />
+ </picture>
+</a>
+
+---
+
 ## Danh mục chỉ số tính toán hỗ trợ
 
 | Ký Hiệu | Tên Chỉ Số | Chức Năng Phân Tích |
