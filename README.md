@@ -29,6 +29,7 @@ C_healthy là thư viện hỗ trợ tính toán và phân tích các chỉ số
 **Hướng dẫn xây dựng thư viện:** [Instruct.md](https://github.com/trgchinhh/C_healthy/blob/main/INSTRUCT.md)<br>
 **Bài viết trên FB:** [Bài viết chính thức trên Facebook](https://www.facebook.com/share/p/161whS2WdN/)<br>
 
+<!--
 ---
 
 ## Số sao
@@ -39,7 +40,7 @@ C_healthy là thư viện hỗ trợ tính toán và phân tích các chỉ số
    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=trgchinhh/C_healthy&type=date&legend=bottom-right&sealed_token=jfn3Ybok43PjkJIpsTi0s-wFWkB2SB2jkaGlyJc83mVE0Vm_RjiFasJpBsQPp7o5vPZj4H6sRFVaqzlqPBNe_0KOAdzc6ObfzJqDjeEsiLNzhq1jzAKcruzCqPCjdlYkjUM8yKCgL88dbwK3ABlKh5274o1TfmZunU02DU17-IcycrP-JdcgRlIbrUOF" />
  </picture>
 </a>
-
+-->
 ---
 
 ## Danh mục chỉ số tính toán hỗ trợ
