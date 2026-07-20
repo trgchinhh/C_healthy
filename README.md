@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/pypi/v/C-healthy.svg?color=blue&label=PyPI" alt="PyPI Version"/>
   </a>
   <a href="https://github.com/trgchinhh/library-C_healthy-cpp">
-    <img src="https://img.shields.io/badge/Language-Python-orange.svg" alt="Language"/>
+    <img src="https://img.shields.io/badge/Language-Python-blue.svg" alt="Language"/>
   </a>
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"/>
