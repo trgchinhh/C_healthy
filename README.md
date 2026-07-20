@@ -1,4 +1,7 @@
-![C_healthy-logo](https://github.com/trgchinhh/C_healthy/blob/main/img/logo.png)
+<p align="center">
+  <img height="250" src="img/logo.png"/>
+</p>
+
 <p align="center">
   <a href="https://pepy.tech/projects/C_healthy">
     <img src="https://static.pepy.tech/badge/C_healthy" alt="Downloads"/>
